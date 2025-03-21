@@ -1,0 +1,82 @@
+/* AdminOrderList.module.css */
+
+.orderListContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    width: 95%;
+    border: 1 px solid black;
+  }
+  
+  .orderItem {
+    background-color: #f9f9f9;
+    border: 1px solid black;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+  }
+  
+  .orderItem h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .orderItem p {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+  
+  .orderItem .orderDetails p,
+  .orderItem .cartItems p {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+
+  
+  .cartItems {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cartItemRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    width: 600px;
+  }
+  
+  .cartItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 30%; /* Set each item width */
+    padding: 0px;
+    height: 300px;
+  }
+  
+  .cartItem img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+
+  
+  .cartItem .itemDetails {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  
+  .orderDate {
+    font-weight: bold;
+    color: #333;
+  }
+
+  .image {
+    margin-left: 20px!important;
+  }

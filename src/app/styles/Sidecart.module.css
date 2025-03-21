@@ -1,0 +1,44 @@
+.side-cart {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    padding: 1.5rem;
+    background-color: rgb(23, 236, 243);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+  }
+  
+  .side-cart h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+  }
+  
+  .side-cart .total {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e5e7eb; /* Tailwind's border-gray-200 */
+  }
+  
+  .side-cart .btn-clear {
+    background-color: #ef4444; /* Tailwind's red-500 */
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+  }
+  
+  .side-cart .btn-clear:hover {
+    background-color: #dc2626; /* Tailwind's red-600 */
+  }
+  
+  .side-cart .btn-checkout {
+    background-color: #10b981; /* Tailwind's green-500 */
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+  }
+  
+  .side-cart .btn-checkout:hover {
+    background-color: #059669; /* Tailwind's green-600 */
+  }

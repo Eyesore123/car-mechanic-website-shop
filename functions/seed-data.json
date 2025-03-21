@@ -1,0 +1,46 @@
+{
+    "delivery": "käsiteltävänä",
+    "orderData": {
+      "cartItems": [
+        {
+          "availability": "12",
+          "id": "28d6021c-7a45-4603-8a0e-d8e6b1dbd083",
+          "image": "https://firebasestorage.googleapis.com/v0/b/finance-tracker-922dd.firebasestorage.app/o/products%2Ftesti?alt=media&token=7494cb79-7685-49c1-bee3-8da75964303c",
+          "name": "testi",
+          "price": 134,
+          "quantity": 1,
+          "totalPrice": 134
+        },
+        {
+          "availability": "10",
+          "id": "12345678-1234-1234-1234-123456789012",
+          "image": "https://firebasestorage.googleapis.com/v0/b/finance-tracker-922dd.firebasestorage.app/o/products%2Ftesti2?alt=media&token=abc123",
+          "name": "testi2",
+          "price": 200,
+          "quantity": 2,
+          "totalPrice": 400
+        }
+      ],
+      "formData": {
+        "address": "seg",
+        "businessAddress": "",
+        "businessEmail": "",
+        "businessId": "",
+        "businessName": "",
+        "businessPhone": "",
+        "businessPostLocation": "",
+        "businessPostalCode": "",
+        "email": "joni.putkinen@protonmail.com",
+        "isBusinessCustomer": false,
+        "name": "wf",
+        "phone": "srg",
+        "postLocation": "seg",
+        "postalCode": "seg",
+        "totalAmount": 534
+      }
+    },
+    "orderID": "2d18b723-f937-4353-b353-77bcf7c5aa4c",
+    "sendStatus": "ei toimitettu",
+    "timestamp": "March 17, 2025 at 10:36:36 AM UTC+2",
+    "userId": "EiSqMZUpT2ZjvXP57I40VKNe4Rm2"
+  }
