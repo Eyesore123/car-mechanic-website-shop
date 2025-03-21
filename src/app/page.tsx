@@ -32,7 +32,7 @@ export default function Home() {
   }
 
   return (
-    <div className='md:min-h-[600px]'>
+    <div className='md:min-h-[600px] flex flex-col justify-center'>
       <MarqueeComponent />
       <h1 className='mainheader md:!mt-2 landingpageheader'>PNP-POWER Shop</h1>
         <div className='items-center text-center md:min-h-[600px]'>
