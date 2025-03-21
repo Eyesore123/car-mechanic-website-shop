@@ -8,7 +8,7 @@ import { useLogout } from '../hooks/useLogout'
 import stylesnav from '../app/styles/Navbar.module.css'
 import Icon from '../../public/images/icon.png'
 import InstaIcon from '../assets/Insta.png'
-import TiktokIcon from '../assets/Tiktok.png'
+import TiktokIcon from '../assets/tiktok.png'
 import { getAuth } from 'firebase/auth'
 
 import { useSelector, useDispatch } from 'react-redux'
