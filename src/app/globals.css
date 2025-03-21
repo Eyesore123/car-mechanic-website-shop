@@ -56,7 +56,11 @@ body {
 /* Imported from PNP-Power: */
 
 .textbox {
-  @apply w-2/3 pt-2 pb-2 bg-white self-center justify-self-center justify-items-center text-black mt-2 lg:pt-2 lg:pb-10 box-border;
+  @apply w-2/3 pt-2 pb-2 bg-white  text-black mt-2 lg:pt-2 lg:pb-10 box-border;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; /* Center horizontally */
 }
 
 .header {
