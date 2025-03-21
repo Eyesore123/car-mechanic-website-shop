@@ -37,3 +37,5 @@ For stylings:
 - Users can check their orders in the "My account" tab. Users can also toggle the newsletter status and delete their account.
 - All the code for firebase functions is included in the project files (and nodemailer is used for sending emails), but the current project setup uses SendGrid for sending emails. 
 - Order confirmation gets sent to the customer's email and an email notification of a new order gets sent to the store owner.
+
+.env configured to use env variables on the server (root directory)
