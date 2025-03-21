@@ -19,7 +19,6 @@ const Login = () => {
   const [resetError, setResetError] = useState<string | null>(null);
   const [resetSuccess, setResetSuccess] = useState(false);
 
-
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
 
@@ -29,7 +28,6 @@ const Login = () => {
     } else {
       console.error('Login failed:', error);
     }
-
   };
 
   const handleResetSubmit = async (e: FormEvent) => {
@@ -56,7 +54,7 @@ const Login = () => {
   }
 
   return (
-    <div className='md:min-h-[1000px]'>
+    <div className='flex flex-col justify-center items-center'>
       {!showResetForm ? (
         <form
         //  className={styles.authForm} 
@@ -114,13 +112,14 @@ const Login = () => {
         </form>
       )}
 
-      <div className='textbox'>
-        <p className='!text-[24px]'>Ei vielä käyttäjätiliä?</p>
+      <div className='textbox flex flex-col items-center justify-center'>
+        <p className='!text-[24px] !mt-4'>Ei vielä käyttäjätiliä?</p>
         <a href="/signup">
-        <button className="gobtn">
-          Rekisteröidy
-        </button></a>
-        <p className='!text-[24px]'>Unohditko salasanasi?</p>
+          <button className="gobtn">
+            Rekisteröidy
+          </button>
+        </a>
+        <p className='!text-[24px] !mt-8'>Unohditko salasanasi?</p>
         <button
           className="gobtn mb-6"
           type="button"
