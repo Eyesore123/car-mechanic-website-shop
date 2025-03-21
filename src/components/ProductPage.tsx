@@ -120,7 +120,7 @@ const ProductPage: React.FC = () => {
 
   return (
     <>
-      <div className={`!min-h-[400px] md:min-h-[1000px] ${isOutOfStock ? 'opacity-70' : ''}`}>
+      <div className={`!min-h-[400px] md:min-h-[1000px] flex flex-col items-center justify-center ${isOutOfStock ? 'opacity-70' : ''}`}>
         <h1 className="product-name header text-center md:!mb-10">{currentProduct.name}</h1>
         <p className="product-description text-center !max-w-[1200px] leading-loose mt-10 md:mt-0 !pb-0 md:!mb-10 !pl-6 !pr-6">{currentProduct.description}</p>
         <div className="flex justify-center md:max-h-[500px] w-auto">
