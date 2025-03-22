@@ -64,7 +64,7 @@ body {
 }
 
 .header {
-  @apply text-black text-4xl mt-18 mr-4 ml-4;
+  @apply text-black text-2xl md:text-4xl mt-10 md:mt-18 mr-4 ml-4;
 }
 
 button {
