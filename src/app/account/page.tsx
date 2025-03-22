@@ -119,7 +119,7 @@ const Account = () => {
   }
 
   return (
-    <div className="p-0 -mt-6 flex flex-col justify-center items-center min-h-[1000px]">
+    <div className="p-0 -mt-6 flex flex-col justify-center items-center md:min-h-[1000px]">
       <h1 className="text-2xl font-bold mb-10 header">Omat tiedot</h1>
 
       <div className="mb-6">

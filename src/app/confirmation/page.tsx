@@ -280,8 +280,8 @@ const ConfirmationPage: React.FC<ConfirmationPageProps> = ({ orderData }) => {
             {/* Cart Items Section */}
             {cartItems.length > 0 ? (
               cartItems.map((item: CartItem) => (
-                <div key={item.id} className="mb-4 w-200 p-4 border rounded-lg shadow-lg flex flex-row justify-center items-center">
-                  <div className="flex flex-row justify-evenly gap-20 items-center">
+                <div key={item.id} className="w-95 mb-4 md:w-200 p-4 border rounded-lg shadow-lg flex flex-row justify-center items-center">
+                  <div className="scale-85 md:scale-100 flex flex-row justify-evenly md:gap-20 items-center">
                     {/* Left: Image */}
                     <div className="flex p-2 items-center">
                       {item.image && <img src={item.image} alt={item.name} className="w-16 h-16 mr-4" />}

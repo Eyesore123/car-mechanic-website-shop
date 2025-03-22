@@ -63,17 +63,17 @@ const CartItem: React.FC<CartItemProps> = ({ item }) => {
   };
 
   return (
-    <div className="cart-item scale-80 mr-20 md:mr-0 md:scale-100 flex items-center justify-between p-4 border-b-2 md:mt-10  border-gray-500 h-60">
-      <div className="flex items-center -ml-20 md:ml-0">
-        <img src={image} alt={name} className="w-20 h-20 object-cover mr-4 ml-6 md:ml-8 rounded-xl" />
-        <div className="w-54 mr-6 md:mr-0 md:w-full flex flex-col justify-center text-center">
+    <div className="cart-item scale-80 mr-20 md:mr-0 md:scale-100 flex items-center justify-between p-4 md:border-b-2 md:mt-10  border-gray-500 h-60">
+      <div className="flex items-center -ml-14 md:-ml-20">
+        <img src={image} alt={name} className="w-20 h-20 object-cover md:mr-4 ml-6 md:ml-8 rounded-xl" />
+        <div className="scale-85 md:scale-100 w-54 mr-6 md:mr-0 md:w-full flex flex-col justify-center text-center">
           <h5 className="text-lg font-bold mt-6 w-full">{name}</h5>
           <p className="text-gray-600 mr-4 !text-[18px] md:!pt-6 md:!pb-6 md:!pr-4 md:!pl-4 md:!mb-23">
             {quantity} x € {price.toFixed(2)} = € {totalPrice.toFixed(2)}
           </p>
         </div>
       </div>
-      <div className="flex items-center space-x-4 md:-ml-4">
+      <div className="flex items-center space-x-4 -ml-4">
         {/* Increment/Decrement Buttons */}
         <div className="flex items-center">
           <button
