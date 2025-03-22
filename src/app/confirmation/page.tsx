@@ -251,7 +251,7 @@ const ConfirmationPage: React.FC<ConfirmationPageProps> = ({ orderData }) => {
   const isProcessing = loading || isRedirecting;
 
   return (
-    <div className='min-h-[1000px]'>
+    <div className='min-h-[1000px] flex flex-col items-center justify-center'>
       <h1 className='mainheader mb-20'>Tilauksen tiedot</h1>
      
       {isProcessing ? (

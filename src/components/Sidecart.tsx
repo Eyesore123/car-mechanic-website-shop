@@ -30,7 +30,7 @@ const SideCart: React.FC<SideCartProps> = ({ closeCart }) => {
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: 100 }}
     >
-      <h2 className="text-2xl font-bold pt-20 pb-16 border-b-2 border-gray-500">Ostoskori:</h2>
+      <h2 className="text-2xl font-bold pt-12 md:pt-20 pb-16 border-b-2 border-gray-500">Ostoskori:</h2>
 
       {cartItems.length === 0 ? (
       <>

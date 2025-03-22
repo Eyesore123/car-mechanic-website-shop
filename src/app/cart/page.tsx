@@ -138,8 +138,8 @@ const CartPage: React.FC = () => {
 
     return (
         <div className='cart-page md:min-h-[500px] flex flex-col items-center justify-center '>
-            <h2 className='header mb-10'>Ostoskori</h2>
-            <div className='cart-items pl-10 md:pl-0'>
+            <h2 className='header md:mb-10'>Ostoskori</h2>
+            <div className='cart-items pl-9 md:pl-0'>
                 {cartItems.length === 0 ? (
                     <p>Ostoskori on tyhjä.</p>
                 ) : (
@@ -151,7 +151,7 @@ const CartPage: React.FC = () => {
 
             {cartItems.length > 0 && (
                 <div className="checkout-section flex flex-col items-center justify-center">
-                    <h2 className='header mb-15'>Tilaustiedot</h2>
+                    <h2 className='header !mt-0 md:!mt-14 mb-15'>Tilaustiedot</h2>
                     <form>
                         <CustomerForm
                         name={enterName}
