@@ -139,7 +139,7 @@ const CartPage: React.FC = () => {
     return (
         <div className='cart-page md:min-h-[500px] flex flex-col items-center justify-center '>
             <h2 className='header mb-10'>Ostoskori</h2>
-            <div className='cart-items'>
+            <div className='cart-items pl-10 md:pl-0'>
                 {cartItems.length === 0 ? (
                     <p>Ostoskori on tyhjä.</p>
                 ) : (
