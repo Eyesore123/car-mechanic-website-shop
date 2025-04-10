@@ -52,12 +52,12 @@ const closeCart = () => {
       <div className='mainheader !mt-0 !pt-0 mb-20 lg:mb-20'>
         Kauppa
       </div>
-      <div className='justify-center items-center text-center ml-10 mr-10'>
+      <div className='flex justify-center items-center text-center ml-10 mr-10'>
         <StoreProductList />
       </div>
 
       {/* Add a button to toggle the cart */}
-      <button onClick={toggleCart} className='fixed bottom-15 md:bottom-60 right-5 bg-blue-500 text-white text-xl px-4 py-2 rounded-lg hover:cursor-pointer hover:scale-105 transform transition-transform duration-100 ease-in-out'>
+      <button onClick={toggleCart} className='fixed bottom-15 md:bottom-60 right-5 bg-blue-500 text-white text-xl px-4 py-2 rounded-lg hover:cursor-pointer hover:scale-105 transform transition-transform duration-100 ease-in-out z-10'>
         {isCartOpen ? 'Sulje ostoskori' : 'Avaa ostoskori'}
       </button>
 

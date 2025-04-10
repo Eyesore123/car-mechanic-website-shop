@@ -42,6 +42,6 @@ For stylings:
 
 Note:
 
-.env configured to use env variables on the server (root directory)
+.env configured to use env variables on the server (root directory).
 If you want to test the site, put all the required keys in a .env file in the project root and launch with "npm run dev" after installing the dependencies with "npm i".
 If you want to test the admin panel, change the user role to "admin" in firebase database. Otherwise you won't see the content that's authorized only to admin.

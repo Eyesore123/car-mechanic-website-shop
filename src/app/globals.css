@@ -51,12 +51,35 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
+
+/* body::before {
+  content: "";
+  position: absolute;
+  top: 15;
+  left: 0;
+  width: 160px;
+  height: 100%;
+  z-index: 1;
+  background-image: linear-gradient(to bottom, #ffffff, #4dd0e1);
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  top: 15;
+  right: 0;
+  width: 160px;
+  height: 100%;
+  z-index: 1;
+  background-image: linear-gradient(to bottom, #ffffff, #4dd0e1);
+} */
 
 /* Imported from PNP-Power: */
 
 .textbox {
-  @apply w-2/3 pt-2 pb-2 bg-white  text-black mt-2 lg:pt-2 lg:pb-10 box-border;
+  @apply w-2/3 pt-2 pb-2 text-black mt-2 lg:pt-2 lg:pb-10 box-border;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,38 +103,39 @@ body {
 }
 
 .mainheader {
-  @apply text-3xl mt-0 text-center mb-10 md:mb-20 md:text-5xl font-bold md:mt-10 pt-10
+  @apply text-3xl mt-0 text-center mb-10 md:mb-20 md:text-5xl font-bold md:mt-10 pt-10;
 }
 
 h3 {
-  @apply pb-2 p-0 md:pt-8 md:pl-6 md:pr-6 
+  @apply pb-2 p-0 md:pt-8 md:pl-6 md:pr-6;
 }
 
 /* .textbox li  */
 
 .listcontainer {
-  @apply flex flex-wrap justify-center items-center w-full
+  @apply flex flex-wrap justify-center items-center w-full;
 }
 
 p.listcontainer {
-  @apply w-full text-center
+  @apply w-full text-center;
 }
 
 p.listcontainer {
-  @apply w-full text-center
+  @apply w-full text-center;
 }
 
 li {
   @apply flex list-none !w-full justify-center items-center text-center
 
-  /* mt-4 mb-4 pl-4 pr-4 */
+  /* mt-4 mb-4 pl-4 pr-4 */;
 }
 
 .pausebtn {
   @apply absolute top-0 left-0 lg:w-full lg:h-full cursor-pointer;
 }
 
-@media (max-width: 1023px) { /* For smaller screens */
+@media (max-width: 1023px) {
+  /* For smaller screens */
   .pausebtn {
     @apply hidden; /* Hide the button on small screens */
   }
@@ -125,7 +149,7 @@ li {
   border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
-  }
+}
 
 .submitbtn:hover {
   background-color: #33ff3a;
@@ -140,7 +164,7 @@ li {
   cursor: pointer;
   font-weight: bold;
   /* margin-top: 25px; */
-  }
+}
 
 .gobtn:hover {
   background-color: #73faff;
@@ -167,7 +191,10 @@ label {
   @apply text-xl mb-4 flex flex-col items-center justify-center;
 }
 
-h2, h3, h4, h5 {
+h2,
+h3,
+h4,
+h5 {
   @apply text-center w-full;
 }
 
@@ -223,12 +250,18 @@ button:disabled {
   text-decoration: underline;
 }
 
+.titlecontainer {
+  @media (max-width: 500px) {
+    max-width: 170px;
+  }
+}
+
 /* Marquee */
 
 .marquee-container {
   height: 90px;
   overflow: visible;
-white-space: nowrap;
+  white-space: nowrap;
 }
 
 .marquee-image {

@@ -55,10 +55,10 @@ const StoreProductList: React.FC = () => {
           }
 
   return (
-    <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 xxl:grid-cols-4 gap-15 md:gap-40 xl:gap-10 justify-items-center mb-10'>
+    <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 xxl:grid-cols-4 gap-0 md:gap-10 xl:mb-14 xl:gap-20 max-w-[1600px]! justify-items-center mb-10'>
       {products.map((product) => (
       <ProductCard
-        key={product.id || ''}
+        key={product.name || ''}
         id={product.id || ''}
         name={product.name}
         description={product.description}
