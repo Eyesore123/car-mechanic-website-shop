@@ -2,15 +2,39 @@
 
 import './globals.css'
 import Link from 'next/link'
+import { useRef } from 'react'
 import { useRouter } from 'next/navigation'
 import { useState, useEffect } from 'react'
 import { auth } from '../firebase/firebaseConfig'
 import Cookiebanner from '../components/Cookiebanner'
 import MarqueeComponent from '@/components/MarqueeComponent'
+import { dot } from 'node:test/reporters'
 
 export default function Home() {
   const router = useRouter();
   const [loading, setLoading] = useState(true);
+
+  // Animation for loading text
+
+  const loadingTextRef = useRef<HTMLParagraphElement | null>(null);
+  const baseText = "Tarkastetaan kirjautumistila";
+  let dotCount = 0;
+  let intervalId: any = null;
+
+  useEffect(() => {
+    if (loading) {
+      intervalId = setInterval(() => {
+        dotCount = (dotCount + 1) % 4;
+        if(loadingTextRef.current) {
+        loadingTextRef.current.textContent = `${baseText}${'.'.repeat(dotCount)}`};
+      }, 500);
+    } else {
+      if (intervalId) {
+        clearInterval(intervalId);
+      }
+      dotCount = 0;
+    }
+  }, [loading]);
 
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((user) => {
@@ -26,7 +50,7 @@ export default function Home() {
   if (loading) {
     return (
       <div className="flex items-center justify-center min-h-screen">
-        <p>Tarkastetaan kirjautumistila...</p>
+        <p id='loader'>Tarkastetaan kirjautumistila</p>
       </div>
     );
   }
